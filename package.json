@@ -7,8 +7,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
-    "concurrently": "^8.2.2",
-    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-compound-slider": "^0.17.1",
     "react-custom-roulette": "^1.4.1",
@@ -22,9 +20,8 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "json-server": "json-server --watch db.json --port 5000",
-    "dev": "concurrently \"npm run json-server\" \"npm start\""
+    "eject": "react-scripts eject"
+   
   },
   "eslintConfig": {
     "extends": [

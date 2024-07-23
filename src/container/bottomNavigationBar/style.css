@@ -138,13 +138,13 @@ html {
   }
 
   .addClsto span:nth-child(1){
-   
     font-weight: bold;
     font-size: 26px;
+    line-height: 32px;
   }
 
   .addClsto span:nth-child(2){
-    font-family: "Playwrite DE Grund", cursive;
+text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
   }
@@ -155,6 +155,16 @@ html {
     color: #f3ba2f;
     text-align: center;
     font-size: 2rem;
+  }
+
+  .addClsto span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .addClsto span > span:nth-child(1){
+     color: #fff;
+     text-align: center;
   }
 
   .two-tkCoins3{
@@ -714,7 +724,7 @@ html {
   background: #5b5b5b;
   border-radius: 42px;
   padding: 1px 0px;
-  align-items: center;
+  align-items:  flex-start;
   min-width: 40%;
   justify-content: space-around;
 }
@@ -756,6 +766,8 @@ html {
   color: #fff;
   font-weight: 500;
   font-size: 10px;
+  width: 100%;
+  position: relative;
 }
 .HeadeueSlides .dWxsign .dixBlk{
    padding:1px 5px 1px; 
@@ -765,7 +777,16 @@ html {
   width: 21px;
   cursor: pointer;
   position: relative;
-  top: -2px;
+  top: 2px;
+}
+.TOKcoin4.TOK9{
+  position: relative;
+  top: -1px;
+}
+.dropDxcv{
+  position: absolute;
+  top:19px;
+  left: 10px;
 }
 
 .HeadeueSlides .dWxsign .dixBlk.dOmBoxify span .TOKcoin4{

@@ -6,23 +6,17 @@ import HeaderMenues from "../headerMenues/HeaderMenues"
 
 
 const HomePage = () => {
- 
+
   return (
     <>
-
-
-
-    
-     <div className='container mrGinBottom'>
-        <div className='row' style={{justifyContent: "center"}}>
-  <HeaderMenues />
-
-<div className='spin-wheel-container'>
-<Roulette />
-
-</div>
-</div>    
-</div>
+      <div className='container mrGinBottom'>
+        <div className='row' style={{ justifyContent: "center" }}>
+          <HeaderMenues />
+          <div className='spin-wheel-container'>
+            <Roulette />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

@@ -31,7 +31,7 @@ const Roulette = () => {
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [rouletteData, setRouletteData] = useState(originalData);
 
-  const [addClassTo, setAddClassTo] = useState('noClassto');
+  const [addClassTo, setAddClassTo] = useState('two-tkCoins noClassto');
 
 
   const postSpinData = async (prizeOption) => {
@@ -118,9 +118,13 @@ const Roulette = () => {
       <div className="winNumber">
         {!mustSpin ? (
           <ul>
-            <li className={addClassTo}><span>Congratulations !</span><span>you have won</span>
-            <span className="two-tkCoins"> {originalData[prizeNumber].option} TOK Coin</span>
-            </li>
+            {/* <li className={addClassTo}> </li> */}
+            <li className={addClassTo}>
+            {originalData[prizeNumber].option === "00"
+                  ? <span><span>"Oops" better Luck next time</span><span>{originalData[prizeNumber].option} TOK Coin</span> </span>
+                  : <span><span>Congratulations!</span> <span>You have won</span><span>{originalData[prizeNumber].option} TOK Coin</span></span>}
+              </li>
+           
             <li className="two-tkCoins">
             <button className="logoicon6n" onClick={handleSpinClick}>
          <img className="logoicon6" src={logoicon6} alt="logo" />
