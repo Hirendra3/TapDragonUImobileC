@@ -4,7 +4,7 @@ import axios from 'axios';
 import playImage from '../../assets/img/28590656.jpg';  
 import playImage2 from '../../assets/img/285906599.jpg';  
 import dragon from '../../assets/img/dragon2.png';  
-import FireDrg from '../dragonWorld/fire'
+// import FireDrg from '../dragonWorld/fire'
 import './stylePlay.css';
 
 const RandomCircle = () => {
